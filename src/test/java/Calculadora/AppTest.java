@@ -33,7 +33,7 @@ public class AppTest
     public void testMultiplicacionOK(){
         double resultadoReal = new Multiplicacion(3,5).calculate();
         double resultadoEsperado = 15;
-        assertEquals(resultadoEsperado,resultadoReal);
+        assertEquals(resultadoEsperado,resultadoReal,0.01);
     }
     @Test
     public void testMultiplicacionFail(){
