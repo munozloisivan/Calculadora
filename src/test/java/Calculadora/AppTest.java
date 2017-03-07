@@ -49,4 +49,9 @@ public class AppTest
     public void testDivisionFail(){
         assertFalse(new Division(6,3).calculate() != 2);
     }
+
+    @Test
+    public void testDivisionInfinite() throws InfiniteException{
+        assertTrue(new Division(6,0).calculate() == Double.POSITIVE_INFINITY);
+    }
 }
